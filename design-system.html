@@ -68,7 +68,7 @@
           <span class="text-light">02</span> Typography
         </h2>
         <div class="flex">
-          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem;">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
               <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p class="fs-900 ff-serif uppercase">Earth</p>
@@ -98,7 +98,7 @@
             </div>
           </div>
 
-          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem;">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
               <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
               <p class="fs-500 ff-serif uppercase">384,400 km</p>
@@ -136,6 +136,67 @@
                 autem? Perspiciatis sunt eligendi quia aut aliquid totam eius
                 harum atque minus omnis.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03</span> Interactive Elements</h2>
+
+        <!-- navigation -->
+        <div>
+          <nav>
+            <ul class="primary-navigation underline-indicators flex" style="--gap: 4rem;">
+              <li class="active">
+                <a href="#" class="uppercase text-white letter-spacing-2"
+                  ><span>01</span>Active</a
+                >
+              </li>
+              <li>
+                <a href="#" class="uppercase text-white letter-spacing-2"
+                  ><span>02</span>Hovered</a
+                >
+              </li>
+              <li>
+                <a href="#" class="uppercase text-white letter-spacing-2"
+                  ><span>03</span>Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div>
+            <!--  explore button -->
+            <a
+              href="#"
+              class="large-button uppercase ff-serif fs-600 text-dark bg-white"
+              >Explore</a
+            >
+          </div>
+
+          <div class="flow" style="margin-bottom: 50vh;--flow-space: 4rem">
+            <!-- tabs -->
+            <div class="tab-list underline-indicators flex">
+              <button aria-selected="true" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Moon</button>
+              <button aria-selected="false" class="uppercase text-accent bg-dark  ff-sans-cond letter-spacing-2">Mars</button>
+              <button aria-selected="false" class="uppercase text-accent bg-dark  ff-sans-cond letter-spacing-2">Europa</button>
+            </div>
+
+            <!-- dots -->
+            <div class="dot-indicators flex">
+              <button aria-selected="true"><span class="sr-only">Slide Title</span></button>
+              <button aria-selected="false" ><span class="sr-only">Slide Title</span></button>
+              <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
+            </div>
+
+            <!-- numbers -->
+            <div class="number-indicators flex">
+              <button aria-selected="true">1</button>
+              <button aria-selected="false" >2</button>
+              <button aria-selected="false">3</button>
             </div>
           </div>
         </div>
