@@ -206,13 +206,22 @@ select {
   color: #fff;
 }
 
+.btn-primary-clr > a{
+  padding: 0;
+  color: #fff;
+}
+
 .btn-primary-clr:hover {
   background-color: var(--clr-primary-hover);
   border-color: var(--clr-primary-hover);
   color: #fff;
 }
 
-/* active indicator */
+.btn-primary-clr > a:hover{
+  color: #fff;
+}
+
+/* active nav indicator */
 .active-nav {
   border-bottom: #db8523 3px solid;
   padding: 10px 2px;
@@ -221,7 +230,7 @@ select {
 
 /* Section padding, margin */
 section {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   padding: 50px 100px;
   margin-bottom: 40px;
 }
