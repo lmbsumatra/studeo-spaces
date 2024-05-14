@@ -7,6 +7,8 @@
   --clr-dark: 230 35% 7%;
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
+  --clr-primary: #f79728;
+  --clr-primary-hover: #db8523;
 
   /* font sizes */
   --fs-900: 9.375rem;
@@ -197,15 +199,35 @@ select {
   line-height: 1.1;
 }
 
+/* button */
+.btn-primary-clr {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+  color: #fff;
+}
+
+.btn-primary-clr:hover {
+  background-color: var(--clr-primary-hover);
+  border-color: var(--clr-primary-hover);
+  color: #fff;
+}
+
+/* active indicator */
+.active-nav {
+  border-bottom: #db8523 3px solid;
+  padding: 10px 2px;
+  color: hsl(var(--clr-dark));
+}
+
 /* Section padding, margin */
-section:not(:last-child) {
+section {
   border: 1px solid blue;
   padding: 50px 100px;
   margin-bottom: 40px;
 }
 
 /* Child of sections and div */
-.items > *:not(:last-child) {
+.items > * {
   margin-bottom: 40px;
 }
 
@@ -242,22 +264,6 @@ section:not(:last-child) {
   height: 100%;
   border-radius: 50%;
 }
-
-/* Remove underline, change text color, and remove bullets */
-footer ul {
-  list-style-type: none;
-}
-
-footer ul li {
-  margin-bottom: 5px;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: hsl(var(--clr-dark));
-  
-}
-
 
 /********************************/
 /*        Navigation Bar        */
@@ -300,7 +306,6 @@ footer ul li a {
   height: 100vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 /* For small devices (phones) */
@@ -338,11 +343,10 @@ footer ul li a {
 /* For large devices (desktops) */
 @media (min-width: 993px) {
   .hero.container-fluid {
-    padding: 0 60px;
+    padding: 0 100px;
     height: 100vh;
   }
 }
-
 
 /********************************/
 /*           Services           */
@@ -376,7 +380,6 @@ footer ul li a {
   }
 }
 
-
 /********************************/
 /*             Blogs            */
 /********************************/
@@ -396,6 +399,12 @@ footer ul li a {
   }
   .col img {
     margin-bottom: 10px;
+  }
+  .blog-img {
+    order: 1;
+  }
+  .blog-details {
+    order: 2;
   }
 }
 
@@ -446,8 +455,45 @@ footer ul li a {
 }
 
 /********************************/
+/*        FAQs Section          */
+/********************************/
+#accordion .accordion-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  #accordion .accordion-item {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    flex: 1;
+    margin-right: 20px;
+  }
+}
+
+
+/********************************/
 /*            Footer            */
 /********************************/
+/* Remove underline, change text color, and remove bullets */
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: hsl(var(--clr-dark));
+}
 /* For small devices (phones) */
 @media (max-width: 576px) {
   .container-fluid {
