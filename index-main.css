@@ -274,6 +274,15 @@ section {
   border-radius: 50%;
 }
 
+.card:hover {
+  border: #db8523 solid 2px;
+}
+/* CSS for when radio button is checked */
+.card [aria-checked='true'] {
+  border: #db8523 solid 2px;
+}
+
+
 /********************************/
 /*        Navigation Bar        */
 /********************************/

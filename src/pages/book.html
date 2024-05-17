@@ -63,55 +63,84 @@
 
     <!-- Book -->
     <section class="container items">
-      <h1 class="fs-700 ff-serif text-center">Book</h1>
+      <h1 class="fs-700 ff-serif text-center">Booking</h1>
 
       <!-- Selecting service -->
       <div class="container">
         <h2 class="fs-600 ff-serif">Select Service</h2>
         <div class="d-flex justify-content-around">
           <div class="card" style="width: 18rem">
-            <img
-              src="./src/assets/images/img_1.jpg"
-              class="card-img-top"
-              alt="..."
+            <label for="service1">
+              <img
+                src="./src/assets/images/img_1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-500 ff-serif">
+                  All day/All night Pass
+                </h5>
+                <p class="card-text">
+                  8am to 3am
+                  <br />
+                  ₱ 250.00
+                </p>
+              </div> </label
+            ><input
+              type="radio"
+              id="service1"
+              name="service"
+              class="card-radio"
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary-clr">Go somewhere</a>
-            </div>
           </div>
-
           <div class="card" style="width: 18rem">
-            <img
-              src="./src/assets/images/img_1.jpg"
-              class="card-img-top"
-              alt="..."
+            <label for="service2">
+              <img
+                src="./src/assets/images/img_1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-500 ff-serif">
+                  All day/All night Pass
+                </h5>
+                <p class="card-text">
+                  8am to 3am
+                  <br />
+                  ₱ 250.00
+                </p>
+              </div> </label
+            ><input
+              type="radio"
+              id="service2"
+              name="service"
+              class="card-radio"
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary-clr">Go somewhere</a>
-            </div>
           </div>
-
           <div class="card" style="width: 18rem">
-            <img src="./src/assets/images/img_1.jpg""..." class="card-img-top"
-            alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary-clr">Go somewhere</a>
-            </div>
+            <label for="service3">
+              <img
+                src="./src/assets/images/img_1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-500 ff-serif">
+                  All day/All night Pass
+                </h5>
+                <p class="card-text">
+                  8am to 3am
+                  <br />
+                  ₱ 250.00
+                </p>
+              </div> </label
+            ><input
+              type="radio"
+              id="service3"
+              name="service"
+              class="card-radio"
+              aria-checked="true"
+            />
           </div>
         </div>
       </div>
@@ -130,6 +159,16 @@
         <h2 class="fs-600 ff-serif">Fill up Information</h2>
         <form action="#" method="POST">
           <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"
               >Email address</label
             >
@@ -142,13 +181,17 @@
               required
             />
           </div>
+
           <div class="mb-3">
-            <label for="exampleInputName" class="form-label">Name</label>
+            <label for="exampleInputEmail1" class="form-label"
+              >Contact Number</label
+            >
             <input
-              type="text"
+              type="email"
               class="form-control"
-              id="exampleInputName"
-              placeholder="Enter your name"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter contact number"
               required
             />
           </div>
@@ -164,6 +207,7 @@
               required
             ></textarea>
           </div>
+
           <button type="submit" class="btn btn-primary">Send</button>
         </form>
       </div>
